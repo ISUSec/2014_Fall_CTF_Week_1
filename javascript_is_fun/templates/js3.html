@@ -1,0 +1,24 @@
+<html>
+<body>
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"> </script>
+<script>
+var password_hash = "15b29ffdce66e10527a65bc6d71ad94d"
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (CryptoJS.MD5(x) != password_hash) {
+        alert("That's not the right password!")
+    } else {
+	alert("Congrats, that is the flag!")
+    }
+}
+</script>
+
+<form onsubmit="validateForm()" name="myForm">
+<input type="text" name="fname">
+</form><br>
+
+<button type="button" onclick="validateForm()">Submit!</button>
+
+</body>
+</html>

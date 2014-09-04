@@ -1,0 +1,10 @@
+<h1> Ping Test </h1>
+
+<form method="POST" action="/">
+    {{ form.hidden_tag() }}
+    {{ form.host.label }} {{ form.host(size=20) }}
+    <input type="submit" value="Go">
+</form>
+
+<pre><code> {{ output }} </code></pre>
+

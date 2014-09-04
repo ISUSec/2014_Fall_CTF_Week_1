@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+var _0x1656=["\x6E\x73\x61\x20\x72\x30\x78\x20\x67\x65\x74\x20\x72\x65\x6B\x74"];var password=_0x1656[0];
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x != password) {
+        alert("That's not the right password!")
+    } else {
+	alert("Congrats, that is the flag!")
+    }
+}
+
+</script>
+
+<form onsubmit="validateForm()" name="myForm">
+<input type="text" name="fname">
+</form><br>
+
+<button type="button" onclick="validateForm()">Submit!</button>
+
+</body>
+</html>

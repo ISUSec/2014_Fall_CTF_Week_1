@@ -1,0 +1,36 @@
+2014-08-24 23:18:23 weka.gui.GUIChooser main
+INFO: Logging started
+---Registering Weka Editors---
+Trying to add database driver (JDBC): RmiJdbc.RJDriver - Error, not in CLASSPATH?
+Trying to add database driver (JDBC): jdbc.idbDriver - Error, not in CLASSPATH?
+Trying to add database driver (JDBC): org.gjt.mm.mysql.Driver - Error, not in CLASSPATH?
+Trying to add database driver (JDBC): com.mckoi.JDBCDriver - Error, not in CLASSPATH?
+Trying to add database driver (JDBC): org.hsqldb.jdbcDriver - Error, not in CLASSPATH?
+CALLED ExperimentEnvironment
+[DEBUGGER] ---- Setup
+Tester set to: weka.experiment.PairedCorrectedTTester
+Running experiment: Runs from: 1 to: 10
+Datasets: /home/akringw/Downloads/weka-3-6-11/data/iris.arff
+Custom property iterator: on
+Custom property path:
+1  weka.experiment.CrossValidationResultProducer::splitEvaluator ClassifierSplitEvaluator: weka.classifiers.rules.ZeroR (version 48055541465867954)
+Custom property name:classifier
+Custom property values:
+ 1 weka.classifiers.rules.ZeroR ZeroR: No model built yet.
+ 2 weka.classifiers.rules.OneR OneR: No model built yet.
+ 3 weka.classifiers.trees.J48 No classifier built
+ResultProducer: CrossValidationResultProducer: -X 10 -W weka.experiment.ClassifierSplitEvaluator --: <null Instances>
+ResultListener: weka.experiment.InstancesResultListener@c1cc436
+
+Writing experiment copy
+Reading experiment copy
+Made experiment copy
+2014-08-24 23:20:05 weka.gui.experiment.RunPanel logMessage
+INFO: Started
+CrossValidationResultProducer: setting additional measures for split evaluator
+2014-08-24 23:20:06 weka.gui.experiment.RunPanel logMessage
+INFO: Finished
+2014-08-24 23:20:06 weka.gui.experiment.RunPanel logMessage
+INFO: There were 0 errors
+Done...
+Comparing (1) with (2)Comparing (1) with (3)Comparing (2) with (3)

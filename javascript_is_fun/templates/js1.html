@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+var password = "shrekisloveshrekislife"
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x != password) {
+        alert("That's not the right password!")
+    } else {
+	alert("Congrats, that is the flag.")
+    }
+}
+</script>
+
+<form onsubmit="validateForm()" name="myForm">
+<input type="text" name="fname">
+</form><br>
+
+<button type="button" onclick="validateForm()">Submit!</button>
+
+</body>
+</html>

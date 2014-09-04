@@ -1,0 +1,9 @@
+<form action="/upload/" method="POST" enctype="multipart/form-data">
+	{{ form.hidden_tag() }}
+	{{ form.photo }}
+	<input type="submit" value="Go">
+</form>
+
+{% for photo in files %}
+    <li><a href="../{{ photo }}">{{ photo}}</a></li>
+{% endfor %}
